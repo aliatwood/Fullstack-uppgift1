@@ -1,4 +1,4 @@
-/* egen css endast för startsidan*/
+/* egen css endast för startsidan och publiceringsidan*/
 *{
     margin: 0;
     padding: 0;
@@ -51,6 +51,14 @@ body{
 .section-title{
     text-align: center;
     margin-top: 5rem;
+}
+
+.footer{
+    text-align: center;
+    background-color: #312e81;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 @media (max-width: 1023px) {
