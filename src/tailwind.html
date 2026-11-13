@@ -7,23 +7,23 @@
     <link href="./css/output.css" rel="stylesheet">
 </head>
 <body class="bg-violet-50">
-    <nav class="flex justify-evenly bg-indigo-900 p-8">
-        <a class="fs-4 text-white" href="index.html">Startsida</a>
-        <a class="fs-4 text-white" href="bootstrap.html">Bootstrap</a>
-        <a class="fs-4 text-white" href="tailwind.html">Tailwind</a>
+    <nav class="flex justify-evenly bg-indigo-900 p-8 max-sm:flex-wrap max-sm:gap-4 max-sm:p-4">
+        <a class="text-xl text-white" href="index.html">Startsida</a>
+        <a class="text-xl text-white" href="bootstrap.html">Bootstrap</a>
+        <a class="text-xl text-white" href="tailwind.html">Tailwind</a>
     </nav>
 
-    <main class="flex flex-col p-8 gap-8">
-        <h1 class="text-center text-4xl font-bold">Tailwind CSS</h1>
+    <main class="flex flex-col p-8 gap-8 max-sm:p-4 max-sm:gap-4">
+        <h1 class="text-center text-4xl font-bold max-sm:text-3xl">Tailwind CSS</h1>
 
-        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100">
-            <h2 class="text-2xl font-bold">Om Tailwind CSS</h2>
+        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100 max-sm:p-4 max-sm:text-base">
+            <h2 class="text-2xl font-bold max-sm:text-xl">Om Tailwind CSS</h2>
             <p class="max-w-xl mx-auto">Tailwind CSS är ett CSS-ramverk som använder färdiga utility-klasser direkt i HTML-koden. Det gör det möjligt att styla webbsidor utan att behöva skriva lika mycket egen CSS</p>
             <a class="text-indigo-700 hover:text-violet-500" href="https://tailwindcss.com/">Tailwinds webbplats</a>
         </section>
 
-        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100">
-            <h2 class="text-2xl font-bold">Fördelar och nackdelar</h2>
+        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100 max-sm:p-4 max-sm:text-base">
+            <h2 class="text-2xl font-bold max-sm:text-xl">Fördelar och nackdelar</h2>
             <h3 class="text-xl font-bold">Fördelar</h3>
             <ul>
                 <li class="list-none">Man kan styla direkt i HTML</li>
@@ -36,14 +36,14 @@
             </ul>
         </section>
 
-        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100">
-            <h2 class="text-2xl font-bold">Egna erfarenheter</h2>
+        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100 max-sm:p-4 max-sm:text-base">
+            <h2 class="text-2xl font-bold max-sm:text-xl">Egna erfarenheter</h2>
             <p class="max-w-xl mx-auto">Jag tycker att Tailwind är smidigt eftersom man kan styla direkt i HTML. I början kan det vara lite svårt att komma ihåg klasserna, men det blir enklare när man väl vänjer sig.</p>
         </section>
 
-        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100">
-            <h2 class="text-2xl font-bold">Jämförelsetabell</h2>
-            <table class="w-full border-collapse">
+        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100 max-sm:p-4 max-sm:text-base">
+            <h2 class="text-2xl font-bold max-sm:text-xl">Jämförelsetabell</h2>
+            <table class="w-full border-collapse max-sm:text-sm">
                 <thead>
                     <tr>
                         <th class="border border-violet-300 bg-violet-200 p-3 font-bold">Egenskap</th>
@@ -87,8 +87,8 @@
             </table>
         </section>
 
-        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100">
-            <h2 class="text-2xl font-bold">Kontakt</h2>
+        <section class="flex flex-col text-xl text-center gap-4 rounded-xl p-7 border bg-violet-100 max-sm:p-4 max-sm:text-base">
+            <h2 class="text-2xl font-bold max-sm:text-xl">Kontakt</h2>
             <form class="flex flex-col gap-3 text-left">
                 <label for="name">Namn</label>
                 <input class="border border-violet-300 rounded-lg p-3 bg-white" type="text" id="name" name="name">
@@ -96,10 +96,8 @@
                 <label for="message">Meddelande</label>
                 <textarea class="border border-violet-300 rounded-lg p-3 bg-white" id="message" name="message"></textarea>
 
-                <label>
-                <input class="border border-violet-300 rounded-lg p-3 bg-white" type="checkbox" name="agree">
-                Jag godkänner
-                </label>
+                <input class="border border-violet-300 rounded-lg p-3 bg-white" type="checkbox" id="agree" name="agree">
+                <label for="agree">Jag godkänner</label>
 
                 <label for="rates">Betyg</label>
             <select class="border border-violet-300 p-3 bg-white rounded-lg" name="rates" id="rates">

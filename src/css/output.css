@@ -19,10 +19,16 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xl: 36rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-bold: 700;
@@ -184,6 +190,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -195,6 +204,18 @@
   }
   .table {
     display: table;
+  }
+  .w-65 {
+    width: calc(var(--spacing) * 65);
+  }
+  .w-75 {
+    width: calc(var(--spacing) * 75);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-full {
     width: 100%;
@@ -216,6 +237,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .justify-center {
     justify-content: center;
@@ -281,6 +305,9 @@
   .text-left {
     text-align: left;
   }
+  .align-middle {
+    vertical-align: middle;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -319,6 +346,41 @@
     }
     .hover\:text-violet-500:hover {
       color: var(--color-violet-500);
+    }
+  }
+  @media (width < 600px) {
+    .max-\[600px\]\:flex-wrap {
+      flex-wrap: wrap;
+    }
+    .max-\[600px\]\:gap-4 {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  @media (width < 40rem) {
+    .max-sm\:flex-wrap {
+      flex-wrap: wrap;
+    }
+    .max-sm\:gap-4 {
+      gap: calc(var(--spacing) * 4);
+    }
+    .max-sm\:p-4 {
+      padding: calc(var(--spacing) * 4);
+    }
+    .max-sm\:text-3xl {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+    .max-sm\:text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+    .max-sm\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+    .max-sm\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
 }
