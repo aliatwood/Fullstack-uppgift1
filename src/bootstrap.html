@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <nav class="d-flex justify-content-evenly bg-primary p-4">
+        <a class="fs-3 text-dark text-decoration-none" href="index.html">Startsida</a>
+        <a class="fs-3 text-dark text-decoration-none" href="bootstrap.html">Bootstrap</a>
+        <a class="fs-3 text-dark text-decoration-none" href="tailwind.html">Tailwind</a>
+    </nav>
+
+    <main>
+        <h1>Bootstrap CSS</h1>
+
+        <section>
+            <h2>Om Bootstrap</h2>
+            <p>Bootstrap är ett CSS-ramverk som innehåller färdiga komponenter och klasser för att skapa responsiva webbsidor. Det gör det enklare att bygga enhetliga och snygga webbplatser.</p>
+            <a href="https://getbootstrap.com/">Bootstraps webbplats</a>
+        </section>
+
+        <section>
+            <h2>Fördelar och nackdelar</h2>
+            <h3>Fördelar</h3>
+            <ul>
+                <li>Innehåller många färdiga komponenter.</li>
+                <li>Gör det enkelt att skapa responsiva webbsidor.</li>
+            </ul>
+
+            <h3>Nackdelar</h3>
+            <ul>
+                <li>Webbsidor kan lätt få ett liknande utseende.</li>
+                <li>Det kan vara svårt att anpassa designen utan egen CSS.</li>
+                <li>Färre inbyggda hover-effekter, vilket kan kräva egen CSS</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Egna erfarenheter</h2>
+            <p>Jag tycker att Bootstrap är ganska enkelt att använda eftersom det finns många färdiga klasser och komponenter. Det går snabbt att få till en snygg design utan att behöva skriva så mycket egen CSS. Däremot kan det kännas lite begränsat när man vill skapa en mer personlig design.</p>
+        </section>
+
+        <section>
+            <h2>Jämförelsetabell</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Egenskap</th>
+                        <th>Bootstrap</th>
+                        <th>Beskrivning</th>
+                        <th>Betyg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Flexibilitet</td>
+                        <td>Medel</td>
+                        <td>Färdiga komponenter men möjlighet till anpassning</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Användning</td>
+                        <td>Enkel</td>
+                        <td>Färdiga klasser och komponenter</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Responsivitet</td>
+                        <td>Bra</td>
+                        <td>Inbyggt grid-system</td>
+                        <td>5/5</td>
+                    </tr>
+                    <tr>
+                        <td>Inlärning</td>
+                        <td>Enkel</td>
+                        <td>Relativt lätt att komma igång</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Dokumentation</td>
+                        <td>Bra</td>
+                        <td>Utförlig dokumentation på webbplatsen</td>
+                        <td>5/5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name">
+
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message"></textarea>
+
+                <label>
+                    <input type="checkbox" name="agree">
+                    Jag godkänner
+                </label>
+
+                <label for="rates">Betyg</label>
+                <select name="rates" id="rates">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <button type="submit">Skicka</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
